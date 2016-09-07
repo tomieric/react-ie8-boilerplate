@@ -20,7 +20,6 @@ var banner = require('./banner')
 var destPath = path.join(__dirname, '../assets')
 var source_path = path.resolve('./src')
 
-console.log(destPath)
 
 module.exports = merge(baseConf, {
     plugins: [
