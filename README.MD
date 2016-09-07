@@ -17,3 +17,9 @@ npm start
 ```
 npm run build
 ```
+
+## window下删除 node_modules
+
+```
+rd /s/q "F:\git\frontpay\react-webpack-pc-boilerplate\node_modules"
+```

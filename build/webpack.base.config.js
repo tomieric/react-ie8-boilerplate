@@ -7,10 +7,8 @@
 
 var path = require('path')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 
-var pkg = require('../package.json')
-var webConf = pkg.webConfig
+
 var assertPath = path.join(__dirname, '../assets')
 var source_path = path.resolve('./src')
 
@@ -70,21 +68,18 @@ module.exports = {
                     cacheDirectory: true
                 }
             }
+        ],
+        postLoaders: [
+          {
+            test: /\.js$/,
+            loaders: ['es3ify-loader'],
+          }
         ]
     },
     postcss: function() {
-        return [autoprefixer, px2rem({remUnit: 64})]
+        return [autoprefixer]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            title: webConf.title,
-            keywords: webConf.keywords,
-            description: webConf.description,
-            tongji: webConf.tongji,
-            template: source_path+'/index.html',
-            filename: 'index.html',
-            inject: 'body'
-        }),
         new ExtractTextPlugin('app.[hash].css')
     ]
 }

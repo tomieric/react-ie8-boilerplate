@@ -5,7 +5,7 @@
  */
 
 import React from 'react'
-import { Router, hashHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router'
 
 const routes = {
     component: require('../containers/common/layout').default,
@@ -13,7 +13,7 @@ const routes = {
         {
             path: '/',
             indexRoute: {
-                onEnter: (nextState, replace) => replace('Home')
+                onEnter: (nextState, replace) => replace('','Home')
             }
         },
         {
@@ -27,4 +27,10 @@ const routes = {
     ]
 }
 
-export default <Router history={ hashHistory } routes={ routes } />
+export default class AppRouter extends React.Component {
+    render() {
+        return (
+            <Router history={ hashHistory } routes={ routes } />
+        )
+    }
+}
