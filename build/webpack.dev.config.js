@@ -55,7 +55,7 @@ module.exports = merge(baseConf, {
         // 代理到 mock 服务器
         proxy: {
             '/API/*': {
-                target: 'http://192.168.8.160:20160/',
+                target: 'http://rap.taobao.org/projectId/47',
                 rewrite: function(req) {
                     req.url = req.url.replace(/^\/API/, '')
                 }

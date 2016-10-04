@@ -14,7 +14,7 @@ var banner = [
 '* v'+ options.version,
 '* created at '+ date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() ,
 '* 2014-'+ (new Date().getFullYear()),
-'* www.frontpay.cn All Rights Reserved.',
+'* Design by tommyshao <tomieric@gmail.com>',
 '* under license '+ options.license,
 '* '+ options.homepage,
 '*/'
