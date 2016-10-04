@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-pc-boilerplate",
+  "name": "react-ie8-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -10,20 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git-frontpay.cn/react-webpack-boilerplate.git"
+    "url": "http://github.com/tomieric/react-ie8-boilerplate.git"
   },
   "keywords": [
     "react",
     "boilerplate",
     "webpack"
   ],
-  "author": "frontpay FED",
+  "author": "tommyshao",
   "license": "MIT",
-  "homepage": "http://www.frontpay.cn",
+  "homepage": "http://github.com/tomieric/react-ie8-boilerplate",
   "webConfig": {
     "title": "react-webpack-pc-boilerplate",
-    "description": "a demo for react-webpack-pc-boilerplate",
-    "keywords": "react,webpack,boilerplate",
+    "description": "react-webpack-ie8-boilerplate",
+    "keywords": "react,webpack,boilerplate, ie8",
     "tongji": ""
   },
   "dependencies": {
