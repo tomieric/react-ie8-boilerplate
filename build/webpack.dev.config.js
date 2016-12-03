@@ -1,6 +1,6 @@
 /**
  * 开发环境
- * 
+ *
  * by tommyshao
  */
 
@@ -47,7 +47,7 @@ module.exports = merge(baseConf, {
         })
     ],
     devServer: {
-        histroyApiFallback: true,
+        historyApiFallback: true,
         hot: true,
         stats: 'erros-only',
         host: host,
