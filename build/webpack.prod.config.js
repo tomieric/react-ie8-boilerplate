@@ -49,11 +49,14 @@ module.exports = merge(baseConf, {
             dry: false
         }),
         new webpack.optimize.UglifyJsPlugin({
-            mangle: { // 排除不想要压缩的对象名称
-                except: ['$super', '$', 'exports', 'require', 'module', '_']
-            },
+            mangle: false,
             compress: {
-                warnings: false
+                warnings: false,
+                screw_ie8: false
+            },
+            output: {
+              // comments: false,
+              screw_ie8: false
             }
         }),
         new webpack.NoErrorsPlugin(),
